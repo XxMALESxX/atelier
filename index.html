@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucas Babetto Atelier</title>
+  <meta name="description" content="Lucas Babetto Atelier — Alfaiataria exclusiva e criação de moda sob medida. Peças únicas feitas com maestria artesanal." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@200;300;400;500;600&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       CURSOR PERSONALIZADO
+  ══════════════════════════════════════════ -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ══════════════════════════════════════════
+       LOADER
+  ══════════════════════════════════════════ -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-inner">
+      <span class="loader-letter">L</span>
+      <span class="loader-letter">B</span>
+      <span class="loader-letter">A</span>
+    </div>
+    <p class="loader-sub">Atelier</p>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       NAVEGAÇÃO
+  ══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <span class="logo-main">Lucas Babetto</span>
+        <span class="logo-sub">Atelier</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre" class="nav-link">Atelier</a></li>
+        <li><a href="#colecao" class="nav-link">Coleção</a></li>
+        <li><a href="#processo" class="nav-link">Processo</a></li>
+        <li><a href="#galeria" class="nav-link">Galeria</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+
+      <a href="https://api.whatsapp.com/message/UZQ2XM2FZ7H5E1?autoload=1&app_absent=0&utm_source=ig"
+         target="_blank" rel="noopener noreferrer"
+         class="nav-cta">
+        <i class="fab fa-whatsapp"></i>
+        Agendar
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose"><i class="fas fa-times"></i></button>
+    <ul>
+      <li><a href="#sobre" class="mobile-link">Atelier</a></li>
+      <li><a href="#colecao" class="mobile-link">Coleção</a></li>
+      <li><a href="#processo" class="mobile-link">Processo</a></li>
+      <li><a href="#galeria" class="mobile-link">Galeria</a></li>
+      <li><a href="#contato" class="mobile-link">Contato</a></li>
+    </ul>
+    <a href="https://api.whatsapp.com/message/UZQ2XM2FZ7H5E1?autoload=1&app_absent=0&utm_source=ig"
+       target="_blank" rel="noopener noreferrer"
+       class="mobile-cta">
+      <i class="fab fa-whatsapp"></i> Falar com o Atelier
+    </a>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <img src="https://sspark.genspark.ai/cfimages?u1=%2Bf4RiyWr3D97Z2sM6eDswUJeU5f60N9Z3PXKJZt%2B3HJprLOQYZeisr%2BJRvEh%2FphIDdlQ9gOczXMJy%2BNEcX90TjtwSbjwI9iFGx3OLTSCIbYvQCRNo9ch%2FGerPelTGL4DsSD6P2gRRbWMuTUhmtEStW3rlg%2FOaSqBe9Y1UM3bVunRbzSUMjvkZYGW54L07JMCm1ZPOXk7t0SMXj%2B325LDLGb%2BkLlpnji7S1H1tJTQ898EriWqAG6cf9gV3zm8vSoDfeA%2FgzonyRqNLK%2FkDBSNwbQ%3D&u2=KEtBzcTYL19rKCdj&width=2560"
+           alt="Lucas Babetto Atelier — Alfaiataria de Luxo"
+           class="hero-img" />
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-up">São Paulo, Brasil</p>
+      <h1 class="hero-title reveal-up">
+        <em>A Arte de</em><br />
+        Vestir Bem
+      </h1>
+      <p class="hero-desc reveal-up">
+        Peças únicas. Cortes precisos.<br />Identidade construída ponto a ponto.
+      </p>
+      <div class="hero-actions reveal-up">
+        <a href="#colecao" class="btn-primary">Ver Coleção</a>
+        <a href="https://api.whatsapp.com/message/UZQ2XM2FZ7H5E1?autoload=1&app_absent=0&utm_source=ig"
+           target="_blank" rel="noopener noreferrer"
+           class="btn-ghost">
+          <i class="fab fa-whatsapp"></i>&nbsp; Falar com o Atelier
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+    <!-- Floating badge -->
+    <div class="hero-badge">
+      <svg viewBox="0 0 100 100" class="badge-svg">
+        <path id="badge-circle" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none"/>
+        <text>
+          <textPath href="#badge-circle">
+            ATELIER EXCLUSIVO · FEITO À MÃO · SOB MEDIDA ·
+          </textPath>
+        </text>
+      </svg>
+      <div class="badge-icon">✦</div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       MARQUEE
+  ══════════════════════════════════════════ -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Sob Medida</span><span class="sep">✦</span>
+      <span>Artesania Exclusiva</span><span class="sep">✦</span>
+      <span>Alfaiataria de Luxo</span><span class="sep">✦</span>
+      <span>Design Autoral</span><span class="sep">✦</span>
+      <span>Criação Única</span><span class="sep">✦</span>
+      <span>São Paulo</span><span class="sep">✦</span>
+      <span>Sob Medida</span><span class="sep">✦</span>
+      <span>Artesania Exclusiva</span><span class="sep">✦</span>
+      <span>Alfaiataria de Luxo</span><span class="sep">✦</span>
+      <span>Design Autoral</span><span class="sep">✦</span>
+      <span>Criação Única</span><span class="sep">✦</span>
+      <span>São Paulo</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SOBRE — ATELIER
+  ══════════════════════════════════════════ -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-visual">
+          <div class="sobre-img-wrap">
+            <img src="https://sspark.genspark.ai/cfimages?u1=uGuia1O5YHlQjeHtNLQGVL90bitLaPlLo0T%2F9If0UcEQL5fqThMuu9E4%2BF9hSj12qiu%2Bl2iaZlgWC165qeXhp2xm9N44P6fp3OHRqReus1tCB3CnDAo1FLWcwBcJQvdYj47dgqKr0Q%3D%3D&u2=2FLWtZm%2B0V61zrES&width=2560"
+                 alt="Alfaiataria artesanal — Lucas Babetto"
+                 class="sobre-img" />
+            <div class="sobre-frame"></div>
+          </div>
+          <div class="sobre-stats">
+            <div class="stat-item">
+              <span class="stat-num" data-target="500">0</span><span class="stat-plus">+</span>
+              <p>Peças criadas</p>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="8">0</span><span class="stat-plus">+</span>
+              <p>Anos de Atelier</p>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="100">0</span><span class="stat-plus">%</span>
+              <p>Feito à mão</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sobre-content">
+          <p class="section-eyebrow">O Atelier</p>
+          <h2 class="section-title">Onde cada peça<br /><em>conta uma história</em></h2>
+          <div class="sobre-text">
+            <p>
+              Lucas Babetto Atelier nasceu da crença de que a moda é uma extensão da identidade. Cada criação carrega uma narrativa — costurada com intenção, construída com maestria e entregue com reverência ao detalhe.
+            </p>
+            <p>
+              Com um olhar apurado entre o clássico e o contemporâneo, o atelier une técnicas tradicionais de alfaiataria a uma linguagem visual exclusiva, produzindo peças que transcendem tendências.
+            </p>
+          </div>
+          <div class="sobre-signature">
+            <img src="https://fonts.gstatic.com/s/cormorantgaramond/v16/co3YmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2" alt="" aria-hidden="true" style="display:none"/>
+            <span class="signature-text">Lucas Babetto</span>
+            <span class="signature-role">Fundador & Designer</span>
+          </div>
+          <a href="#colecao" class="btn-outline">Explorar a Coleção <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       COLEÇÃO
+  ══════════════════════════════════════════ -->
+  <section class="colecao" id="colecao">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Criações</p>
+        <h2 class="section-title">A Coleção</h2>
+        <p class="section-subtitle">Peças concebidas como obras — cada tecido escolhido, cada corte pensado.</p>
+      </div>
+
+      <div class="colecao-grid">
+
+        <div class="colecao-card large">
+          <div class="card-img-wrap">
+            <img src="https://sspark.genspark.ai/cfimages?u1=jU0473vrPsDU4p83NTR3BsQVlv3qtwxJKmisJGmNNvae6McmUZ5NLgknpKyRFALzpP1LJH21JQyF5w6r5Ab3OK%2F0l%2BamhL8HVCOo5kmFqLpbbuSiaiCGcA%3D%3D&u2=UAHTKafPA9tDm4yB&width=2560"
+                 alt="Coleção Premium — Terno Sob Medida"
+                 class="card-img" />
+            <div class="card-overlay">
+              <a href="https://api.whatsapp.com/message/UZQ2XM2FZ7H5E1?autoload=1&app_absent=0&utm_source=ig"
+                 target="_blank" rel="noopener noreferrer"
+                 class="card-cta">Solicitar <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-cat">Alfaiataria</span>
+            <h3 class="card-title">Terno Estruturado</h3>
+            <p class="card-text">Corte italiano refinado, tecido premium</p>
+          </div>
+        </div>
+
+        <div class="colecao-card">
+          <div class="card-img-wrap">
+            <img src="https://sspark.genspark.ai/cfimages?u1=3WjCp6uNKqKJrOA8f0bZP1wvj0S%2B2hxGIs1do1BlPrwhwAC%2B4an6k6JB39WskVqhWcXX%2BeYfCFbuEgntHZhZSowe3hlzK70ZfUqV6C9Vj7WAL6sAERzCAjG4yQtKQpWKcbD25EuImkZq75Go9W1PK1PzFIBOyHdXu8enWtN%2FYBw3XgN14EJjeS2M%2Bsx7YLpMYxCOlfDFg0cFDVCudJtwP%2BPpIb%2FBOeI6xnJqXcEeayZPH%2BejEjV3piC6YUsnvtE0WVMulIN17tf%2F0Q5DeZoTq8VGszfcqR2fQRJz5MM%3D&u2=O1wG8Mdq%2FXI%2FUMBt&width=2560"
+                 alt="Peças Exclusivas — Casaco Artesanal"
+                 class="card-img" />
+            <div class="card-overlay">
+              <a href="https://api.whatsapp.com/message/UZQ2XM2FZ7H5E1?autoload=1&app_absent=0&utm_source=ig"
+                 target="_blank" rel="noopener noreferrer"
+                 class="card-cta">Solicitar <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-cat">Criação Autoral</span>
+            <h3 class="card-title">Casaco Artesanal</h3>
+            <p class="card-text">Lã virgem, entretela bordada à mão</p>
+          </div>
+        </div>
+
+        <div class="colecao-card">
+          <div class="card-img-wrap">
+            <img src="https://sspark.genspark.ai/cfimages?u1=4SbVyImBsFAH%2B2NEts%2FZ%2BQGXhK601wajF%2FH1EotmohiDckvVtUyDsXt8MOFV8kogLfv20k%2F%2BXykklDn9YAsNFrIeqKgcnYKde1fiFBHTqSjhAukwK5YiBlg7smD%2FtrDlTAjurcBAs%2BC3rUznAYbWo3FObq4me%2Fofjye65PiH&u2=FWjPBXBKWr2h0sht&width=2560"
+                 alt="Alfaiataria Exclusiva — Blazer Sob Medida"
+                 class="card-img" />
+            <div class="card-overlay">
+              <a href="https://api.whatsapp.com/message/UZQ2XM2FZ7H5E1?autoload=1&app_absent=0&utm_source=ig"
+                 target="_blank" rel="noopener noreferrer"
+                 class="card-cta">Solicitar <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-cat">Sob Medida</span>
+            <h3 class="card-title">Blazer Clássico</h3>
+            <p class="card-text">Caimento perfeito, botões artesanais</p>
+          </div>
+        </div>
+
+        <div class="colecao-card">
+          <div class="card-img-wrap">
+            <img src="https://sspark.genspark.ai/cfimages?u1=WXVS%2FHBkOFcaOOQDLBgWCGNjWSjqIuXqm3EvgIrB%2BqJpc%2FLIW3juURY1g4pKTQrGF2qMeLdxJMR%2B%2BKxZ8o8B0dXE3HNfhYTm0BnhjXa6vnG0&u2=Kx5fA8jxr4XdRWKs&width=2560"
+                 alt="Traje Exclusivo — Conjunto Completo"
+                 class="card-img" />
+            <div class="card-overlay">
+              <a href="https://api.whatsapp.com/message/UZQ2XM2FZ7H5E1?autoload=1&app_absent=0&utm_source=ig"
+                 target="_blank" rel="noopener noreferrer"
+                 class="card-cta">Solicitar <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="card-info">
+            <span class="card-cat">Alta Costura</span>
+            <h3 class="card-title">Traje Completo</h3>
+            <p class="card-text">Conjunto exclusivo, 100% artesanal</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="colecao-footer">
+        <a href="https://api.whatsapp.com/message/UZQ2XM2FZ7H5E1?autoload=1&app_absent=0&utm_source=ig"
+           target="_blank" rel="noopener noreferrer"
+           class="btn-primary large">
+          <i class="fab fa-whatsapp"></i>&nbsp; Encomendar Sua Peça
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       PROCESSO
+  ══════════════════════════════════════════ -->
+  <section class="processo" id="processo">
+    <div class="processo-bg">
+      <img src="https://sspark.genspark.ai/cfimages?u1=KVlbwjJ7lvJh34TTiwRIgugahxzuATbweEBIB6quFBFLYJ0Am%2FcNheQpB9EJY5IrD8hIxUqj1SeDfA5a9Go2bxGAgpCXe2b2S9bjX%2BeQPBdPr9EJRgDXUPaYt%2FFWq%2FtCo7X43Rot3Q%2FMgtMXQjlHTsYO6A%3D%3D&u2=qZTWcsFu6917BOI0&width=2560"
+           alt="Atelier background" class="processo-bg-img" />
+      <div class="processo-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="processo-header">
+        <p class="section-eyebrow light">Metodologia</p>
+        <h2 class="section-title light">O Processo<br /><em>do Atelier</em></h2>
+      </div>
+      <div class="processo-steps">
+
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <h3>Consulta Exclusiva</h3>
+            <p>Uma conversa íntima para entender sua visão, estilo e necessidades. Cada detalhe importa.</p>
+          </div>
+        </div>
+
+        <div class="step-divider"></div>
+
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <h3>Seleção de Tecidos</h3>
+            <p>Curadoria de materiais nobres nacionais e importados. Tecidos escolhidos com rigor editorial.</p>
+          </div>
+        </div>
+
+        <div class="step-divider"></div>
+
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <h3>Criação & Corte</h3>
+            <p>Modelagem exclusiva, traçado manual e corte milimétrico. A peça ganha forma com precisão.</p>
+          </div>
+        </div>
+
+        <div class="step-divider"></div>
+
+        <div class="step">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <h3>Costura Artesanal</h3>
+            <p>Cada ponto costurado à mão com maestria. Acabamentos invisíveis que revelam excelência.</p>
+          </div>
+        </div>
+
+        <div class="step-divider"></div>
+
+        <div class="step">
+          <div class="step-num">05</div>
+          <div class="step-content">
+            <h3>Prova & Entrega</h3>
+            <p>Ajustes finos até a perfeição. A peça é entregue como uma obra de arte, embalada com cuidado.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="processo-cta">
+        <a href="https://api.whatsapp.com/message/UZQ2XM2FZ7H5E1?autoload=1&app_absent=0&utm_source=ig"
+           target="_blank" rel="noopener noreferrer"
+           class="btn-white">
+          <i class="fab fa-whatsapp"></i>&nbsp; Iniciar Meu Projeto
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       GALERIA
+  ══════════════════════════════════════════ -->
+  <section class="galeria" id="galeria">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Portfólio</p>
+        <h2 class="section-title">Galeria</h2>
+        <p class="section-subtitle">Fragmentos de uma trajetória construída com paixão pela criação.</p>
+      </div>
+
+      <div class="galeria-masonry">
+        <div class="gal-item tall">
+          <img src="https://sspark.genspark.ai/cfimages?u1=JEOsHNo2pAcxuqsG%2FMX%2Fq1q3%2BgQYlLElS2FeiIuY1vEEBfTeWxGofJ8IFmgThqQlrkF4fU%2FvjJMK%2FRzCvgE7rmT4uolqmVN%2B%2BBWZ87A9Wk4TqvkaFdWAXw%3D%3D&u2=6zrKUIW38IguRd2W&width=2560"
+               alt="Galeria Lucas Babetto" />
+          <div class="gal-hover"><span>Coleção Especial</span></div>
+        </div>
+        <div class="gal-item">
+          <img src="https://sspark.genspark.ai/cfimages?u1=5%2FQRwvTfreUGjQc9awFgY%2BZIOFX8rc0d8zuARAp7Gi5OOxTSrcHwbXnCsXPy%2BNe0hMYii2bV2oJ4b2KqzV8LeSssX3QBV80DM2RJEmXZgwBSkyV6RK3CeezL14o%2BVgeSrtBTqd%2Fxu0k9ULt10PV2HR3Z0wJ6SwIbUNOg60LXMQlMmds%3D&u2=WQYkENc%2FBHCWEkZ5&width=2560"
+               alt="Galeria Lucas Babetto" />
+          <div class="gal-hover"><span>Alta Costura</span></div>
+        </div>
+        <div class="gal-item">
+          <img src="https://sspark.genspark.ai/cfimages?u1=4E%2FIPSwpPzfKbN1Ztf6zyDUxTmxMYpwUBQ9SnEJpRQxStGAQq9L0D3G5mMSsay%2B7VXSG88OZlf66oc9aW2C1cP2MSywSVQE%2BZxDd5Dk79%2Fexv0AveLENg8XWKhOGIQ%3D%3D&u2=brWn9VSUnEVjQQiF&width=2560"
+               alt="Galeria Lucas Babetto" />
+          <div class="gal-hover"><span>Detalhes</span></div>
+        </div>
+        <div class="gal-item wide">
+          <img src="https://sspark.genspark.ai/cfimages?u1=u2OhmYhmRHSIKDm19s1yP3ptqIElMQE%2B0055wyHb%2BWRlCkHxRpwVM%2Bh0tSCzkssREwZd99c5R8xG2LKXEMoqFn%2BpIq618vfTGjpitxwJzebzj36Wwd6D%2BwZkkoc&u2=7VOodKFFv9roPBHN&width=2560"
+               alt="Galeria Lucas Babetto" />
+          <div class="gal-hover"><span>Artesania</span></div>
+        </div>
+        <div class="gal-item">
+          <img src="https://sspark.genspark.ai/cfimages?u1=AU%2FFvloQwlG5VPThGJz1v409eupYk9JTnqxfHooZDzp%2Bho5nUUkyX33yYfkbad6jUhr0mRpN6agarTHZ%2BBdB5cbziIWePN8koLeAxwn%2BxGkoCMoSEIn4SVwN2Ac4tPjycVq15P412KbWWF9LbkgcPJVA%2F1x2DqPAzm4VIllupCNfZPYZN1Nt32sY&u2=Wt0VN89B5DcCknpC&width=2560"
+               alt="Galeria Lucas Babetto" />
+          <div class="gal-hover"><span>Editorial</span></div>
+        </div>
+      </div>
+
+      <div class="galeria-insta">
+        <p>Acompanhe o dia a dia do atelier</p>
+        <a href="https://www.instagram.com/lucas.babetto/" target="_blank" rel="noopener noreferrer" class="insta-link">
+          <i class="fab fa-instagram"></i> @lucas.babetto
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       DEPOIMENTOS
+  ══════════════════════════════════════════ -->
+  <section class="depoimentos">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Clientes</p>
+        <h2 class="section-title">O que dizem<br /><em>sobre o Atelier</em></h2>
+      </div>
+
+      <div class="dep-grid">
+        <div class="dep-card">
+          <div class="dep-quote">"</div>
+          <p class="dep-text">A peça que Lucas criou para mim transcendeu tudo o que eu imaginava. É verdadeira arte vestível — cada detalhe perfeito, o caimento impecável.</p>
+          <div class="dep-author">
+            <div class="dep-avatar">R.M.</div>
+            <div>
+              <strong>Rafael Monteiro</strong>
+              <span>Empresário, São Paulo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dep-card featured">
+          <div class="dep-quote">"</div>
+          <p class="dep-text">Quando visto uma peça do Lucas Babetto Atelier, sinto que carrego uma história. A atenção ao detalhe é incomparável no mercado nacional.</p>
+          <div class="dep-author">
+            <div class="dep-avatar">A.L.</div>
+            <div>
+              <strong>Ana Luiza Ferreira</strong>
+              <span>Diretora de Arte</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dep-card">
+          <div class="dep-quote">"</div>
+          <p class="dep-text">Experiência única do início ao fim. O processo de criação é tão especial quanto a peça em si. Recomendo a quem valoriza exclusividade real.</p>
+          <div class="dep-author">
+            <div class="dep-avatar">C.B.</div>
+            <div>
+              <strong>Carlos Braga</strong>
+              <span>Produtor Cultural</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CONTATO / CTA FINAL
+  ══════════════════════════════════════════ -->
+  <section class="contato" id="contato">
+    <div class="contato-inner">
+      <div class="contato-bg">
+        <img src="https://sspark.genspark.ai/cfimages?u1=1%2BGIqZMrxSngf7U2%2BXCSyyzYrS8MAuCw14KoaySpSZ3Ha9ZQo7bMyRA4b4IVezTMpBg%2BS9CCFMRj%2BiC%2B1OaiyILkovtBy13CRRcIDT2zLv%2BcdmHqmuITdqaglUKkyH9R4xUKfrC5iLwDZt%2FMQNANTGKH%2FTedFkBHCCw%3D&u2=XHRW5GAs7l41oT8F&width=2560"
+             alt="Contato" class="contato-bg-img" />
+        <div class="contato-overlay"></div>
+      </div>
+      <div class="contato-content">
+        <p class="section-eyebrow light">Contato</p>
+        <h2 class="contato-title">
+          Vamos criar<br />algo <em>extraordinário</em><br />juntos?
+        </h2>
+        <p class="contato-desc">
+          Entre em contato pelo WhatsApp e agende sua consulta exclusiva.<br />
+          Cada projeto começa com uma conversa.
+        </p>
+
+        <a href="https://api.whatsapp.com/message/UZQ2XM2FZ7H5E1?autoload=1&app_absent=0&utm_source=ig"
+           target="_blank" rel="noopener noreferrer"
+           class="whatsapp-btn" id="mainWhatsappBtn">
+          <div class="whatsapp-icon">
+            <i class="fab fa-whatsapp"></i>
+          </div>
+          <div class="whatsapp-text">
+            <span class="wpp-main">Falar com o Atelier</span>
+            <span class="wpp-sub">Resposta rápida · WhatsApp</span>
+          </div>
+          <div class="whatsapp-arrow">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </a>
+
+        <div class="contato-social">
+          <a href="https://www.instagram.com/lucas.babetto/" target="_blank" rel="noopener noreferrer" class="social-link">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <span class="social-sep">—</span>
+          <a href="https://api.whatsapp.com/message/UZQ2XM2FZ7H5E1?autoload=1&app_absent=0&utm_source=ig"
+             target="_blank" rel="noopener noreferrer"
+             class="social-link">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span>Lucas Babetto</span>
+            <span class="footer-logo-sub">Atelier</span>
+          </div>
+          <p class="footer-tagline">A arte de vestir bem,<br />construída ponto a ponto.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/lucas.babetto/" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://api.whatsapp.com/message/UZQ2XM2FZ7H5E1?autoload=1&app_absent=0&utm_source=ig" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#sobre">Atelier</a></li>
+            <li><a href="#colecao">Coleção</a></li>
+            <li><a href="#processo">Processo</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contato</h4>
+          <p>Atendimento exclusivo<br />via WhatsApp</p>
+          <a href="https://api.whatsapp.com/message/UZQ2XM2FZ7H5E1?autoload=1&app_absent=0&utm_source=ig"
+             target="_blank" rel="noopener noreferrer"
+             class="footer-wpp">
+            <i class="fab fa-whatsapp"></i> Enviar mensagem
+          </a>
+          <p class="footer-location"><i class="fas fa-map-marker-alt"></i> São Paulo, Brasil</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Lucas Babetto Atelier. Todos os direitos reservados.</p>
+        <p class="footer-craft">Feito com ✦ em São Paulo</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://api.whatsapp.com/message/UZQ2XM2FZ7H5E1?autoload=1&app_absent=0&utm_source=ig"
+     target="_blank" rel="noopener noreferrer"
+     class="float-wpp" id="floatWpp"
+     aria-label="Falar via WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="float-pulse"></span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
