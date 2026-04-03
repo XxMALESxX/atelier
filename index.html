@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucas Babetto Atelier | Maringá</title>
+  <meta name="description" content="Lucas Babetto Atelier – Peças exclusivas sob medida para momentos especiais. Atendimento presencial com hora marcada ou online. Maringá, PR." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+
+  <!-- ===================== SPLASH SCREEN ===================== -->
+  <div id="splash-screen" class="splash-screen">
+    <div class="splash-overlay"></div>
+    <div class="splash-particles" id="splash-particles"></div>
+    <div class="splash-content">
+      <div class="splash-logo">
+        <div class="splash-line-top"></div>
+        <h1 class="splash-title">Lucas Babetto</h1>
+        <p class="splash-subtitle-atelier">Atelier</p>
+        <div class="splash-ornament">✦</div>
+        <div class="splash-line-bottom"></div>
+        <p class="splash-tagline">Peças exclusivas para momentos especiais ✨</p>
+      </div>
+      <div class="splash-click-hint">Clique em qualquer lugar para entrar</div>
+    </div>
+    <audio id="splash-audio" preload="auto">
+      <source src="https://www.genspark.ai/api/files/s/QC9y2HNl?token=Z0FBQUFBQnAwQ2dyVjFxYmstZThLNEF0UTZLRW5jNWNKcEdwUnprZ0wwcDRNQ3NEeXFZTEpEblNhdUkxM253MXFxUDJLVkU3U2sxVnZ6TjRrT3ROaG9ILTQyb2k0ZE1MRDV6N0wyV19udUtVbXdvTGJNa3kxc3pkSHdDcTQ1YjlObHRUZ0tRUWpPZGduaXgtcTVld3A5THlOOHNBTjNrbW1GTGJzTTM4dGFrWENNZ1Z6a0VLV19ESDZJLXRPTzJhTjBGbUVpWGFvbWwzT0tzbVZTTHNpSGdCVUpvYTNtUE95NUJidGRUbUVmdVo2aHJkcThyMVZObDZGc1ZXd0s2eG54eHpvMjhSeF9vWGZkTnJqSFN1TDdPR1dyWDBkVG01UGc9PQ" type="audio/mpeg" />
+    </audio>
+  </div>
+
+  <!-- ===================== MAIN SITE ===================== -->
+  <div id="main-site" class="main-site hidden">
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="navbar" class="navbar">
+      <div class="nav-container">
+        <a href="#inicio" class="nav-logo">
+          <span class="nav-logo-name">Lucas Babetto</span>
+          <span class="nav-logo-atelier">Atelier</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#trabalhos">Trabalhos</a></li>
+          <li><a href="#agendar">Agendar</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <a href="https://api.whatsapp.com/message/UZQ2XM2FZ7H5E1?autoload=1&app_absent=0&utm_source=ig" target="_blank" class="nav-cta">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="nav-mobile-menu" id="nav-mobile-menu">
+        <ul>
+          <li><a href="#inicio" class="mobile-link">Início</a></li>
+          <li><a href="#sobre" class="mobile-link">Sobre</a></li>
+          <li><a href="#trabalhos" class="mobile-link">Trabalhos</a></li>
+          <li><a href="#agendar" class="mobile-link">Agendar</a></li>
+          <li><a href="#contato" class="mobile-link">Contato</a></li>
+          <li><a href="https://api.whatsapp.com/message/UZQ2XM2FZ7H5E1?autoload=1&app_absent=0&utm_source=ig" target="_blank" class="mobile-link mobile-wa">WhatsApp</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ===== HERO SECTION (Video Background) ===== -->
+    <section id="inicio" class="hero-section">
+      <!-- Video Background -->
+      <div class="video-bg-wrapper">
+        <video id="hero-video" class="hero-video" autoplay muted loop playsinline disablePictureInPicture>
+          <source src="https://www.genspark.ai/api/files/s/KEHwLxz9?token=Z0FBQUFBQnAwQ2dyTExvNEliRWo3UUktbkNGSWNkb0JqZUhkOE9HUi1xdWtadDQ5azNGREtwc1VndWx0d3BiSUJ2OTlvNDlkTmkxRnRDR0J3ak1iNWFkbWxhdVlCd3FPV0NVdG02LV9naXF0amg0ZXgyVTFJM2ZoQk9BbHFqa0UzNmdUejlKUWE1SkJBSkJuVUlGYi1TUk5BZmY4TzdJdERNY1Q2cG5jMnhxNVMyNWpMT25GUkJtQjZyUHJPR1p4T09mZkREZEh4bzNuaThhMnRiOVZMV3RBUGhxd1VPNW9hRnFVUnhRUUxsejhyN1Vyekx6WTZ5Unptd1dXYU5TTi1RNzBuMjNHVHVVMXdtUGQyb2ZaVWprXzc4dVl2bmdHUWc9PQ" type="video/mp4" />
+        </video>
+        <div class="video-overlay"></div>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <div class="hero-eyebrow">✦ Atelier de Moda Feminina ✦</div>
+        <h1 class="hero-title">
+          <span class="hero-title-main">LUCAS BABETTO</span>
+          <span class="hero-title-atelier">Atelier</span>
+        </h1>
+        <p class="hero-subtitle">Peças exclusivas sob medida para momentos especiais</p>
+        <div class="hero-divider">
+          <span class="hero-divider-line"></span>
+          <span class="hero-divider-ornament">✦</span>
+          <span class="hero-divider-line"></span>
+        </div>
+        <div class="hero-badges">
+          <span class="hero-badge">Sob Medida</span>
+          <span class="hero-badge">Somente Venda</span>
+          <span class="hero-badge">Hora Marcada</span>
+        </div>
+        <a href="#agendar" class="hero-cta">Agende sua Consulta</a>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator">
+        <span>Role para baixo</span>
+        <div class="scroll-arrow">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE SECTION ===== -->
+    <section id="sobre" class="about-section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <p class="section-eyebrow">✦ Conheça o Atelier ✦</p>
+          <h2 class="section-title">Sobre nós</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="about-grid">
+          <div class="about-text fade-in">
+            <p class="about-lead">
+              Lucas Babetto Atelier é um ateliê de moda feminina localizado em Maringá, PR, especializado em criar <strong>peças exclusivas sob medida</strong> para momentos especiais.
+            </p>
+            <p class="about-body">
+              Com atendimento personalizado — presencial com hora marcada ou online — cada vestido é projetado para ser único, valorizando a silhueta e a personalidade de cada cliente. Trabalhamos somente com venda, sem aluguel, garantindo que cada peça seja verdadeiramente sua.
+            </p>
+            <p class="about-body">
+              Dos bordados artesanais feitos à mão cristal por cristal, passando pelo croqui personalizado até a prova final, cada detalhe é pensado com cuidado e exclusividade.
+            </p>
+            <div class="about-cta-group">
+              <a href="#agendar" class="btn-primary">Agende sua Consulta</a>
+              <a href="https://www.instagram.com/lucas.babetto/reels/" target="_blank" class="btn-secondary">
+                <i class="fab fa-instagram"></i> Ver Instagram
+              </a>
+            </div>
+          </div>
+          <div class="about-features fade-in">
+            <div class="feature-card">
+              <div class="feature-icon">✨</div>
+              <h3>Sob Medida</h3>
+              <p>Cada peça é desenhada e confeccionada exclusivamente para você, valorizando sua silhueta e personalidade.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">👗</div>
+              <h3>Somente Venda</h3>
+              <p>Peças únicas que são verdadeiramente suas. Sem aluguel — porque você merece ter algo só seu.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">📅</div>
+              <h3>Hora Marcada</h3>
+              <p>Atendimento personalizado presencial ou online, sempre com total dedicação e atenção a você.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">💎</div>
+              <h3>Bordado Artesanal</h3>
+              <p>Cristal por cristal, tudo feito à mão com exclusividade, transformando cada vestido em uma joia artesanal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MARQUEE STRIP ===== -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <span>✦ Sob Medida</span>
+        <span>✦ Peças Exclusivas</span>
+        <span>✦ Bordado Artesanal</span>
+        <span>✦ Momentos Especiais</span>
+        <span>✦ Alta Costura</span>
+        <span>✦ Atendimento Personalizado</span>
+        <span>✦ Somente Venda</span>
+        <span>✦ Maringá PR</span>
+        <span>✦ Sob Medida</span>
+        <span>✦ Peças Exclusivas</span>
+        <span>✦ Bordado Artesanal</span>
+        <span>✦ Momentos Especiais</span>
+        <span>✦ Alta Costura</span>
+        <span>✦ Atendimento Personalizado</span>
+        <span>✦ Somente Venda</span>
+        <span>✦ Maringá PR</span>
+      </div>
+    </div>
+
+    <!-- ===== TRABALHOS SECTION ===== -->
+    <section id="trabalhos" class="portfolio-section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <p class="section-eyebrow">✦ Criações Exclusivas ✦</p>
+          <h2 class="section-title">Nossos Trabalhos</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">Cada peça conta uma história única</p>
+        </div>
+
+        <!-- Portfolio Filter Tabs -->
+        <div class="portfolio-tabs fade-in">
+          <button class="tab-btn active" data-filter="all">Todos</button>
+          <button class="tab-btn" data-filter="photos">Fotos</button>
+          <button class="tab-btn" data-filter="videos">Vídeos</button>
+        </div>
+
+        <!-- Photo Cards -->
+        <div class="portfolio-grid" id="portfolio-grid">
+
+          <!-- Photo 1 -->
+          <div class="portfolio-card fade-in" data-type="photos">
+            <div class="portfolio-card-img-wrapper">
+              <img
+                src="https://www.genspark.ai/api/files/s/QVbmeU87?token=Z0FBQUFBQnAwQ2dyQU0zMkh0QTRfTl9KVWlwbERSd1RoTmxDNVdfN29qUklIeWYxOHJSMUYxdnd1ejkxNDczdmNWVzFFbWc1Vl9iQXU0TUFXbkVJUWRRc2V3b1BKYkxyZW1scW9HNUNFemVXUVFwX2w1T2ItZzMxcGZaWTRLQ2kwSzlGNW9PR0xpWXNlM0pieVBIdndCLWIwVUpFZ3pzSjR0LVZnSzhIdkphN0M3QXhyYVdkQXNXUzNvaUppWG93cy1IVGVzbjRQb24zQWdlWmpkbFVUNEJHaF9EbzZfTFZBVVlkb3dTNDNtcEc2NTRvT21uTXJmYTRKZlFJWGNFQU1mMlEwN093RkJmX25kUFNYMmdzTGp1emlDRXVKdjlNN3c9PQ"
+                alt="Vestido Exclusivo sob medida - Lucas Babetto Atelier"
+                loading="lazy"
+                onerror="this.src='https://via.placeholder.com/600x800/0a0a0a/c9a96e?text=Lucas+Babetto+Atelier'"
+              />
+              <div class="portfolio-card-overlay">
+                <button class="portfolio-zoom-btn" aria-label="Ampliar imagem">
+                  <i class="fas fa-expand"></i>
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-card-info">
+              <h3>Vestido Exclusivo Sob Medida</h3>
+              <p>Peça exclusiva desenvolvida à mão, com detalhes sofisticados que valorizam a silhueta. Um vestido que é verdadeira expressão de elegância e personalidade.</p>
+              <span class="portfolio-tag">Sob Medida</span>
+            </div>
+          </div>
+
+          <!-- Photo 2 -->
+          <div class="portfolio-card fade-in" data-type="photos">
+            <div class="portfolio-card-img-wrapper">
+              <img
+                src="https://www.genspark.ai/api/files/s/1FlvH2L1?token=Z0FBQUFBQnAwQ2dyQjJrSFFaZlZCMkdTM1lFcXVxLU9QU3NtdVFDTTFoM3oyWDBySnpsQXlKbENSYnB1VnRfenZaUjBOQmhxZW5TTlR5ZjctdFZiNS12TWQtdDdrcVpEcU1JSjktTGM1MXlJb2prNDdtNm1QSm5mLUFRdS1QZVdLVUFlQVA2b1BMdTE1NV9WVUhfb3ZPQnE0dExZYWlFNHlNc0VJVHhLSXIxc042anRZZGJtVWpUd3Z2eUFQOU1qenhYMi1JcExjb296SExmLU5pMnpOMEJPMzltYUJlX3RGQzJSWkRINlUwbzRHMGRESlVWVFpublBuUGVsTS04MEhaQmpoQ3p5WFRFWUJtNWJIWDRrNFBOOTZkTzNPejZhcVE9PQ"
+                alt="Alta Costura Artesanal - Lucas Babetto Atelier"
+                loading="lazy"
+                onerror="this.src='https://via.placeholder.com/600x800/0a0a0a/c9a96e?text=Lucas+Babetto+Atelier'"
+              />
+              <div class="portfolio-card-overlay">
+                <button class="portfolio-zoom-btn" aria-label="Ampliar imagem">
+                  <i class="fas fa-expand"></i>
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-card-info">
+              <h3>Alta Costura Artesanal</h3>
+              <p>Vestido confeccionado com bordados manuais requintados e acabamento impecável. Criado especialmente para momentos que merecem ser vividos com estilo e sofisticação.</p>
+              <span class="portfolio-tag">Bordado Manual</span>
+            </div>
+          </div>
+
+          <!-- Photo 3 -->
+          <div class="portfolio-card fade-in" data-type="photos">
+            <div class="portfolio-card-img-wrapper">
+              <img
+                src="https://www.genspark.ai/api/files/s/glx2rdsS?token=Z0FBQUFBQnAwQ2dyWTJRbTFZV1dST2dmSEZLV3ZVMnlIay1tTHJaOUJfSE13Ny12X1FHMjBaMGlxUVhnU2VzcTBvZ2w3SzlqMFF2RE43a1FOalVtOUtuWEVBb2FpNXFzQkNXX0FXakQ5ck1zcVdLbXltNUNMWjgweGdEZVBxY2JSOTQzNmxOSFVvMkVSM1hCbWRQZU5PQ1JOTWpNSzgtU2w3U0o3cGFOQ3A3UzFXX21oTkJoSXotTG5KZnF1VTVoci1xY2I1TTVTV3Y5aTB4bzduWjdodmpvdHQ5djUtRkc2TFc0djRvN2hxTFNyWHdHYmpadGxSXzdjNlNXRDZHbEdpblp6V2ExUkNMWnRhZy0wU2VDTWZxRDF6MG9IX3RhUlE9PQ"
+                alt="Design Sob Medida Premium - Lucas Babetto Atelier"
+                loading="lazy"
+                onerror="this.src='https://via.placeholder.com/600x800/0a0a0a/c9a96e?text=Lucas+Babetto+Atelier'"
+              />
+              <div class="portfolio-card-overlay">
+                <button class="portfolio-zoom-btn" aria-label="Ampliar imagem">
+                  <i class="fas fa-expand"></i>
+                </button>
+              </div>
+            </div>
+            <div class="portfolio-card-info">
+              <h3>Design Sob Medida Premium</h3>
+              <p>Uma peça única desenhada para valorizar cada detalhe. Do croqui ao vestido final, cada etapa é realizada com cuidado artesanal, resultando em uma verdadeira obra de arte.</p>
+              <span class="portfolio-tag">Peça Exclusiva</span>
+            </div>
+          </div>
+
+          <!-- Video 1 -->
+          <div class="portfolio-card portfolio-card--video fade-in" data-type="videos">
+            <div class="portfolio-card-video-wrapper">
+              <video controls playsinline class="portfolio-video">
+                <source src="https://www.genspark.ai/api/files/s/LYhmwwoP?token=Z0FBQUFBQnAwQ2dyS1d4amR6V0FwSGljSDFRbURUZDFxLXNtYS05by1jM29QSE5KdXFjOC03R20tU0xfLUlXZW9qcGhhdzFCcXkzazRWS3drYnJfLUpGMVU5dkptSi10UXRHY0xOZGhLOUZqeVFzU2luVTlPY0J1Wm50TXdCeGRNRklDclVYUXZpNHNaN2xUbTVZV19SWnM0dHpxaHBsUFpJclpuTEFqejhvWDBYOUlPQVJxNW5nZzhEUXZBODhZU2ZlQ0lxZ2RLb1d4MnNSVHRwYVdiNVhJOGp0UEhkdUZRUFBkUTlGaVlIREJxUkZaZWhnNEItSE0tbnQ5WWI0NDVfaXItS2V4aFNzOUhjRDg1NUxIcE1tUS1oOE9TbUZkQ1E9PQ" type="video/mp4" />
+              </video>
+            </div>
+            <div class="portfolio-card-info">
+              <h3>Processo Criativo</h3>
+              <p>Acompanhe o processo artesanal por trás de cada criação exclusiva. Do primeiro croqui ao vestido finalizado.</p>
+              <span class="portfolio-tag">Vídeo</span>
+            </div>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="portfolio-card portfolio-card--video fade-in" data-type="videos">
+            <div class="portfolio-card-video-wrapper">
+              <video controls playsinline class="portfolio-video">
+                <source src="https://www.genspark.ai/api/files/s/ZtGctExQ?token=Z0FBQUFBQnAwQ2dyOE9aSE85XzlUZnZ2UzZMMlJnZGE4ZURvMVdnMEpKVEVvODZ5enlRWmh3amM5NlVCWjlHS0c1X1ZHWVhraHpUQ1NqUlZHYm40T1phbDFZTzl3TFdQRDRQZnNxS21qTzdpcGdpLXZYVGtOU1RpS3ZDYm1mYVBWQVRLeE82dzF0OVpqS0x6OWdzclZORVZwSFlBRXlXRXJMaWZjMjFZUEVJV0gtQ3dWX3ZhSzMwa0pNY1RWUWZlaHZJMzlYcm1lSkdoQWFVRko3VVJhMGVHb05DRHJjSV92cVBSQjlRMHUyVWVwOGhFamtMSEVjbVZmbU4xNHNxcUNOZmpPaEJyV1FHTnpzeERJNjFoQkdPQWtXYk9CY1RRcmc9PQ" type="video/mp4" />
+              </video>
+            </div>
+            <div class="portfolio-card-info">
+              <h3>Vestido de Festa</h3>
+              <p>Confecção artesanal com bordado manual para momentos inesquecíveis. Elegância e exclusividade em cada detalhe.</p>
+              <span class="portfolio-tag">Vídeo</span>
+            </div>
+          </div>
+
+          <!-- Video 3 - Instagram embed -->
+          <div class="portfolio-card portfolio-card--video fade-in" data-type="videos">
+            <div class="portfolio-card-insta-wrapper">
+              <iframe
+                src="https://www.instagram.com/p/C3lqFsHAV6t/embed/"
+                width="100%"
+                height="100%"
+                frameborder="0"
+                scrolling="no"
+                allowtransparency="true"
+                loading="lazy"
+                title="Instagram - Lucas Babetto Atelier"
+                style="min-height:480px;border:none;">
+              </iframe>
+            </div>
+            <div class="portfolio-card-info">
+              <h3>Elegância Exclusiva</h3>
+              <p>Cada peça é uma joia artesanal, criada sob medida com cristais e pedrarias que transformam o vestido em uma obra única.</p>
+              <span class="portfolio-tag">Vídeo</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DEPOIMENTOS SECTION ===== -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <p class="section-eyebrow">✦ O que dizem nossas clientes ✦</p>
+          <h2 class="section-title">Depoimentos</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="testimonials-grid fade-in">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"O vestido ficou absolutamente perfeito! O Lucas entendeu tudo que eu queria e criou uma peça única que valoriza cada detalhe. Recebi elogios a noite toda. Recomendo demais!"</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">A.L.</div>
+              <div>
+                <strong>Ana Luisa</strong>
+                <span>Formanda de Medicina</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Trabalho impecável, atendimento super personalizado e carinhoso. O bordado artesanal do meu vestido é uma obra de arte — cristal por cristal, feito com tanta dedicação. Me senti uma rainha!"</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">P.A.</div>
+              <div>
+                <strong>Polyana</strong>
+                <span>Formatura em Medicina</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Desde o primeiro atendimento até a prova final, me senti completamente acolhida. O Lucas tem um olhar sensível e cria peças que vão muito além do vestido — cria momentos inesquecíveis."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">I.S.</div>
+              <div>
+                <strong>Isabela</strong>
+                <span>Noiva</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== AGENDAMENTO SECTION ===== -->
+    <section id="agendar" class="booking-section">
+      <div class="booking-bg-overlay"></div>
+      <div class="container">
+        <div class="section-header fade-in">
+          <p class="section-eyebrow">✦ Exclusividade para você ✦</p>
+          <h2 class="section-title">Agende sua Consulta</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">Preencha o formulário abaixo e entraremos em contato para confirmar o melhor horário para seu atendimento.</p>
+        </div>
+
+        <div class="booking-wrapper">
+          <div class="booking-info fade-in">
+            <h3>Como funciona?</h3>
+            <div class="booking-step">
+              <div class="step-number">01</div>
+              <div class="step-text">
+                <strong>Envie sua solicitação</strong>
+                <p>Preencha o formulário com seus dados e descreva a peça que deseja.</p>
+              </div>
+            </div>
+            <div class="booking-step">
+              <div class="step-number">02</div>
+              <div class="step-text">
+                <strong>Confirmação de horário</strong>
+                <p>Entraremos em contato por e-mail ou WhatsApp para confirmar a data disponível.</p>
+              </div>
+            </div>
+            <div class="booking-step">
+              <div class="step-number">03</div>
+              <div class="step-text">
+                <strong>Atendimento personalizado</strong>
+                <p>Presencial em nosso atelier em Maringá ou online, totalmente dedicado a você.</p>
+              </div>
+            </div>
+            <div class="booking-step">
+              <div class="step-number">04</div>
+              <div class="step-text">
+                <strong>Sua peça exclusiva</strong>
+                <p>Desenvolvemos seu vestido do zero, único e feito especialmente para você.</p>
+              </div>
+            </div>
+            <div class="booking-contact-quick">
+              <p>Prefere falar pelo WhatsApp?</p>
+              <a href="https://api.whatsapp.com/message/UZQ2XM2FZ7H5E1?autoload=1&app_absent=0&utm_source=ig" target="_blank" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div class="booking-form-wrapper fade-in">
+            <form id="booking-form" class="booking-form" novalidate>
+              <!-- FormSubmit hidden fields (activated on first submission) -->
+              <input type="hidden" name="_subject" value="Novo Agendamento - Lucas Babetto Atelier" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value="#agendar" />
+              <div class="form-group">
+                <label for="nome">Nome Completo *</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+                <span class="form-error" id="nome-error">Por favor, informe seu nome.</span>
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+                <span class="form-error" id="email-error">Por favor, informe um e-mail válido.</span>
+              </div>
+              <div class="form-group">
+                <label for="telefone">Telefone (preferencialmente WhatsApp) *</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="+55 (44) 99999-9999" required />
+                <span class="form-error" id="telefone-error">Por favor, informe seu telefone.</span>
+              </div>
+              <div class="form-group">
+                <label for="mensagem">Sua Mensagem *</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva o que você precisa (tipo de peça, ocasião, cor preferida...) e qual dia/horário fica melhor para você. Entraremos em contato para confirmar!" required></textarea>
+                <span class="form-error" id="mensagem-error">Por favor, escreva sua mensagem.</span>
+              </div>
+              <button type="submit" class="btn-submit" id="submit-btn">
+                <span class="btn-submit-text">Enviar Solicitação</span>
+                <span class="btn-submit-loading hidden"><i class="fas fa-spinner fa-spin"></i> Enviando...</span>
+              </button>
+              <p class="form-note">⏰ Atendimento de segunda a sexta-feira, com hora marcada.</p>
+            </form>
+
+            <!-- Success message -->
+            <div class="form-success hidden" id="form-success">
+              <div class="success-icon">✓</div>
+              <h3>Solicitação enviada!</h3>
+              <p>Obrigada! Recebemos sua solicitação. Entraremos em contato em breve via e-mail ou pelo número que você informou. 💛</p>
+              <a href="#inicio" class="btn-primary" style="margin-top:1.5rem;">Voltar ao início</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO SECTION ===== -->
+    <section id="contato" class="contact-section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <p class="section-eyebrow">✦ Fale conosco ✦</p>
+          <h2 class="section-title">Contato</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info fade-in">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-text">
+                <strong>E-mail</strong>
+                <a href="mailto:atelier.lucasbabetto@gmail.com">atelier.lucasbabetto@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+              <div class="contact-text">
+                <strong>Telefone / WhatsApp</strong>
+                <a href="https://api.whatsapp.com/message/UZQ2XM2FZ7H5E1?autoload=1&app_absent=0&utm_source=ig" target="_blank">+55 (44) 99900-3789</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="contact-text">
+                <strong>Endereço</strong>
+                <span>R. Chicago, 16 - Jardim Los Angeles<br/>Maringá - PR, 87080-420</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-clock"></i></div>
+              <div class="contact-text">
+                <strong>Horário de Atendimento</strong>
+                <span>Segunda a Sexta-feira<br/>Com hora marcada</span>
+              </div>
+            </div>
+            <div class="contact-socials">
+              <a href="https://www.instagram.com/lucas.babetto/reels/" target="_blank" class="social-btn instagram-btn" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+                <span>@lucas.babetto</span>
+              </a>
+              <a href="https://api.whatsapp.com/message/UZQ2XM2FZ7H5E1?autoload=1&app_absent=0&utm_source=ig" target="_blank" class="social-btn whatsapp-btn" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+              </a>
+            </div>
+          </div>
+          <div class="contact-map fade-in">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.945!2d-51.9617!3d-23.4291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd0b7c25b55d3%3A0x9b7e9e0d7c4e3c1f!2sR.%20Chicago%2C%2016%20-%20Jardim%20Los%20Angeles%2C%20Maring%C3%A1%20-%20PR%2C%2087080-420!5e0!3m2!1spt-BR!2sbr!4v1680000000000!5m2!1spt-BR!2sbr"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Localização Lucas Babetto Atelier">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <p class="footer-logo-name">Lucas Babetto</p>
+            <p class="footer-logo-atelier">Atelier</p>
+            <p class="footer-tagline">Peças exclusivas para momentos especiais ✨</p>
+          </div>
+          <div class="footer-links">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#trabalhos">Trabalhos</a>
+            <a href="#agendar">Agendar</a>
+            <a href="#contato">Contato</a>
+          </div>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/lucas.babetto/reels/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://api.whatsapp.com/message/UZQ2XM2FZ7H5E1?autoload=1&app_absent=0&utm_source=ig" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:atelier.lucasbabetto@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Maringá – PR, Brasil</p>
+          <p>© 2026 Lucas Babetto Atelier. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== WHATSAPP FLOATING BUTTON ===== -->
+    <a href="https://api.whatsapp.com/message/UZQ2XM2FZ7H5E1?autoload=1&app_absent=0&utm_source=ig"
+       target="_blank"
+       class="whatsapp-float"
+       aria-label="Fale conosco no WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+      <span class="whatsapp-tooltip">Fale conosco!</span>
+    </a>
+
+    <!-- ===== IMAGE LIGHTBOX ===== -->
+    <div id="lightbox" class="lightbox hidden">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Fechar">&times;</button>
+      <div class="lightbox-content">
+        <img id="lightbox-img" src="" alt="Trabalho Lucas Babetto Atelier" />
+      </div>
+    </div>
+
+  </div><!-- end #main-site -->
+
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
